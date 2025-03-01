@@ -16,6 +16,8 @@ Currently the program only supports FullHD 16:9 AND 2K 16:9 screenshots, support
 py -m pip install MODULENAME
 ```
 These modules are required: **Pillow, xlwt, pytesseract, opencv-python**.
+5. The program uses external [JXR to PNG converter by ledoge](https://github.com/ledoge/jxr_to_png), download [here](https://github.com/ledoge/jxr_to_png/releases/download/v1.1/release.zip) and place `jxr_to_png.exe` in the program root directory.
+6. The external converter also requires [Visual C++ Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe).
 
 The program can be run via CMD with the following command:
 ```
