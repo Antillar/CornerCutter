@@ -4,8 +4,17 @@ Program to transform Star Wars Battlefront 2 screenshots of personal tab of matc
 ## About the program
 The core feature of the program is to use OCR to convert image into text. However, due to different languages the players have the game in, the text in the image can be vastly different, thus will provide poor quality result if put through OCR pipeline without any assumptions. To overcome the problem, firstly only the pieces with numbers are cut out from the image, which are near the center (hense the name corner cutter) and OCR is run on those.
 There are problems with OCR, main one being - EA uses crappy font (which is even different for the language) and also adds those orange glare around everything. So the images need to be cleaned up before running the OCR.
-Also, some barebones support was implemented for processing several players' data without it interfering with each other. Could be expanded in the future.
-Currently the program only supports FullHD 16:9 AND 2K 16:9 screenshots, support for other resolutions can be added easily though once the examples of such screenshots are provided.
+Also, some support was implemented for processing several players' data without it interfering with each other.
+
+The program also uses an external converter for JXR file format due to Python not having any reliable library to do so internally - see the following [explanation by jxfindeisen](https://github.com/jkfindeisen/python-mix?tab=readme-ov-file#jpeg-xr-file-reading).
+
+The list of currently supported screenshot resolutions:
+* FullHD monitors 16x9 (1920x1080)
+* FullHD monitors 16x10 (1920x1200)
+* UltraWide FullHD monitors 21x9 (2560x1080)
+* 2K monitors 16x9 (2560x1440)
+* 2K monitors 16x10 (2560x1600)
+* 4K monitors 16x9 (3840x2160)
 
 ## How to run the program
 1. The program requires Python v3, can be downloaded from here: [Python Website](https://www.python.org/downloads/windows/).
