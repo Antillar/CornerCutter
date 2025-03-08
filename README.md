@@ -14,6 +14,7 @@ The list of currently supported screenshot resolutions:
 * UltraWide FullHD monitors 21x9 (2560x1080)
 * 2K monitors 16x9 (2560x1440)
 * 2K monitors 16x10 (2560x1600)
+* UltraWide 2K monitors 21x9 (3440x1440)
 * 4K monitors 16x9 (3840x2160)
 
 ## How to run the program

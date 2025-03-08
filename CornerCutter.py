@@ -72,6 +72,21 @@ def get_offsets(_width, _height):
         o_x2 = 1207
         o_y2 = 1104
 
+    # UltraWide 2K monitors 21:9 (3440x1440)
+    if 0.95 < _width / 3440 < 1.05 and 0.95 < _height / 1440 < 1.05:
+        k_x1 = 1580
+        k_y1 = 928
+        k_x2 = 1647
+        k_y2 = 965
+        a_x1 = 1580
+        a_y1 = 997
+        a_x2 = 1647
+        a_y2 = 1035
+        o_x1 = 1530
+        o_y1 = 1066
+        o_x2 = 1647
+        o_y2 = 1104
+
     # 4K monitor 16x9 (3840x2160)
     if 0.95 < _width / 3840 < 1.05 and 0.95 < _height / 2160 < 1.05:
         k_x1 = 1720
